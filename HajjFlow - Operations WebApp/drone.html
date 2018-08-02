@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Detection</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+<script>
+    
+                function runScript(e,value) {
+                    
+                    //See notes about 'which' and 'key'
+                    if (e.keyCode == 13) {
+                        document.getElementById("veh-div").style.display="none";
+                        document.getElementById("brd-div").style.display="none";
+                        document.getElementById("doc-div").style.display="none";
+                        if(value=="0786413395"){
+                            document.getElementById('emap').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.1793930417066!2d39.82701631502236!3d21.422192679606123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204ba29449b5f%3A0x3b33a69e931cab32!2sUnnamed+Road%2C+Ajyad%2C+Makkah+24231!5e0!3m2!1sen!2ssa!4v1533213447606";
+                            document.getElementById("veh-div").style.display="block";
+                        }
+                        if(value=="1935089223"){
+                            document.getElementById('emap').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.5428608242196!2d39.82585282920964!3d21.42250524756286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI1JzIxLjAiTiAzOcKwNDknMzUuMCJF!5e0!3m2!1sen!2ssa!4v1533208681589";
+                            document.getElementById("brd-div").style.display="block";
+                        }
+                        if(value=="2731624708"){
+                            document.getElementById('emap').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.0836965262104!2d39.826611658084495!3d21.42266449334702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI1JzIxLjYiTiAzOcKwNDknMzkuNyJF!5e0!3m2!1sen!2ssa!4v1533214207572";
+                            document.getElementById("doc-div").style.display="block";
+                        }
+                        document.getElementById("exampleInputEmail1").value="";
+                        document.getElementById("exampleInputEmail1").focus();
+                        return false;
+                    }
+                }
+</script>
+    
+
+</head>
+<body>
+	
+
+	<header>
+        
+		<div class="row">
+			<div class="col-md-4">
+				<div class="nav">
+					<a href="#"><img src="images/menu.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="logo"><img src="images/logo.png" alt=""></div>
+			</div>
+			<div class="col-md-4">
+				<div class="orga">
+					<img src="images/orga.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="fullMap">
+			<div class="detectArea">
+
+				<div class="droneFly">
+					<img src="images/drone-02.gif" alt="">	
+				</div>
+
+				<div class="videoFly">
+					<video width="600" controls>
+					  <source src="images/dronevideo.mp4" type="video/mp4">
+					</video>
+
+				</div>
+			</div>
+ <div id="map"></div>
+			<iframe class="mapFrame" id="emap" name="emap" frameborder="0" style="border:0"
+			  src="heatmap.html">
+			</iframe>
+		</div>
+	</div>
+
+</body>
+</html>

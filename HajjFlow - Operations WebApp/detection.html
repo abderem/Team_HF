@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Detection</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+<script>
+    
+                function runScript(e,value) {
+                    
+                    //See notes about 'which' and 'key'
+                    if (e.keyCode == 13) {
+                        document.getElementById("veh-div").style.display="none";
+                        document.getElementById("brd-div").style.display="none";
+                        document.getElementById("doc-div").style.display="none";
+                        if(value=="0786413395"){
+                            document.getElementById('emap').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4025.963166180523!2d39.885181179849496!3d21.414825976447183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c2040c07bc41b3%3A0xd41520b5af44543e!2z2KfZhNiv2YHYp9i5INin2YTZhdiv2YbZig!5e1!3m2!1sar!2ssa!4v1533239723335";
+                            document.getElementById("veh-div").style.display="block";
+                        }
+                        if(value=="1935089223"){
+                            document.getElementById('emap').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4014.9484568936005!2d39.88012017606902!3d21.413497962871762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI0JzQ4LjYiTiAzOcKwNTInNDAuNiJF!5e1!3m2!1sar!2ssa!4v1533239312360";
+                            document.getElementById("brd-div").style.display="block";
+                        }
+                        if(value=="2731624708"){
+                            document.getElementById('emap').src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4025.963166180523!2d39.885181179849496!3d21.414825976447183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI0JzUzLjQiTiAzOcKwNTInNTguOCJF!5e1!3m2!1sar!2ssa!4v1533239652688";
+                            document.getElementById("doc-div").style.display="block";
+                        }
+                        document.getElementById("exampleInputEmail1").value="";
+                        document.getElementById("exampleInputEmail1").focus();
+                        return false;
+                    }
+                }
+
+                function runDrone() {
+                	document.getElementById("drone").style.display="block";
+                	document.getElementById("dronefly").style.display="block";   
+                        document.getElementById("map").style.display="none";              	
+                }
+</script>
+    
+
+</head>
+<body>
+	
+
+	<header>
+        
+		<div class="row">
+			<div class="col-md-4">
+				<div class="nav">
+					<a href="#"><img src="images/menu.png" alt=""></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="logo"><a href="dashboard.html"><img src="images/logo.png" alt=""></a></div>
+			</div>
+			<div class="col-md-4">
+				<div class="orga">
+					<img src="images/orga.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="fullMap">
+			<div class="detectArea">
+				<div class="num">
+					<input type="text" class="form-control" onkeypress="return runScript(event,this.value)" id="exampleInputEmail1" placeholder="Locate by Id / Name">
+				</div>
+				<div class="detected brd" id="brd-div" style="display:none">
+					<div class="item">
+						<div class="row">
+							<div class="col-md-12 avatarArea">
+								<div class="avatar">
+									<img src="images/officer-img.png" alt="">
+								</div>
+								<div id="officer" class="avaLabel brownLabel"><i><img src="images/officer-ico.png" alt=""></i></div>
+							</div>
+							<div class="col-md-12 avaDetails">
+								<strong>Abdul Qadir</strong>
+								 <span>Saudi - Arabic</span>
+								<br />
+								<span>Officer In charge</span>
+								<span><em>Badge No: </em>928349568</span>
+								<br />
+								<span><em>Mobile: </em>0096659345258</span>
+								<span><em>Speciality: </em>0096659345258</span>
+                                <br />
+                                <span><em>Last Detect: </em>19-10-2018 | 14:27 </span>
+	                                <br />
+								<span>21°25'21.0"N 39°49'35.0"E</span>
+							</div>
+							<div class="col-md-12">
+                                	<a href="#" class="fullPforile">Full Profile</a>
+                                	<a href="#" class="detectDrone" onclick="runDrone();" >Detect Live</a>
+                                </div>
+						</div>
+					</div>
+                </div>
+                    <div class="detected brd" id="veh-div" style="display:none">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-12 avatarArea">
+									<div class="avatar">
+										<img src="images/bus-ico.png" alt="">
+									</div>
+									<div id="bus" class="avaLabel redLabel"><i><img src="images/bus-icon.png" alt=""></i></div>
+								</div>
+								<div class="col-md-12 avaDetails">
+									<strong>SAPTCO BUS 238</strong>
+									<span>BJA 8872 - Hindi</span>
+									<br />
+									<span><em>Driver Name: </em>Basharat</span>
+									<span><em>Mobile: </em>0096659345258</span>
+									<span><em>Nationality: </em>Indian</span>
+	                                <br />
+									<span><em>Last Detect: </em>19-10-2018 | 14:27 </span>
+	                                <br />
+									<span>21°25'21.0"N 39°49'35.0"E</span>
+								</div>
+                                <div class="col-md-12">
+                                	<a href="#" class="fullPforile">Full Profile</a>
+                                	<a href="#" class="detectDrone" onclick="runDrone();" >Detect Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detected brd" id="doc-div" style="display:none">
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-md-12 avatarArea">
+									<div class="avatar">
+										<img src="images/baby-img.png" alt="">
+									</div>
+									<div id="doctor" class="avaLabel blueLabel"><i><img src="images/hajj-ico.png" alt=""></i></div>
+								</div>
+								<div class="col-md-12 avaDetails">
+									<strong>Muhammed Ahmed</strong>
+									<span>Egyptian - Arabic</span>
+									<br />
+									<span><em>Group Name: </em>Dujoof ArRahmaan</span>
+									<span><em>Mobile: </em>0096659345258</span>
+									<span><em>Responsible Name: </em>Ali Saad</span>
+                               		<span><em>Responsible Number: </em>00966553423423</span>
+	                                <br />
+	                                <span><em>Last Detect: </em>19-10-2018 | 14:27 </span>
+	                                <br />
+									<span>21°25'21.0"N 39°49'35.0"E</span>
+								</div>
+                                <div class="col-md-12">
+                                	<a href="#" class="fullPforile">Full Profile</a>
+                                	<a href="#" class="detectDrone" onclick="runDrone();" >Detect Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="droneFly" id="drone" style="display:none" >
+					<img src="images/drone-02.gif" alt="">	
+				</div>
+
+				<div class="videoFly" id="dronefly" style="display:none">
+					<video width="600" controlls autoplay>
+					  <source src="images/dronevideo.mp4" type="video/mp4">
+					</video>
+
+				</div>
+
+
+
+			</div>
+ <div id="map"></div>
+			<iframe class="mapFrame" id="emap" name="emap" frameborder="0" style="border:0"
+			  src="heatmap2.html">
+			</iframe>
+		</div>
+	</div>
+
+</body>
+</html>

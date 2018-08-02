@@ -1,0 +1,123 @@
+body {
+   background: #F9F9F9;
+   font-family: ;
+}
+.width100 {
+  width: 100%;
+}
+.brd {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+
+header {
+  padding: 0px;
+  margin: 0px;
+  height: 60px;
+  background: #fff;
+  border-top: 2px solid #00BABF;
+ -webkit-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 2;
+}
+.logo {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.mapOut {
+  margin: -20px;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.map {
+  position: relative;
+  height: 400px;
+}
+.filter {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  background: #fff;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.2);
+
+}
+.filter a {
+  color: #000;
+}
+
+
+.blockMain {
+  border: 1px solid silver;
+}
+
+
+.dItems .item {
+  background: #fff;
+  padding: 20px;
+  
+  margin-bottom: 30px;
+  text-align: center;
+    -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+}
+.dItems .item:hover {
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.1);
+
+}
+.dItems .item a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  padding-right: 20px;
+  padding-right: 20px;
+}
+.dItems .item i {
+  margin-right: 20px;
+}
+
+.orga {
+  width: 37px;
+  height: 37px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid #D8D8D8;
+  float: right;
+  margin-top: 10px;
+  margin-right: 25px;
+  padding: 5px;
+}
+.nav {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.orga img {
+  width: 25px;
+  height: 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}

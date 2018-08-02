@@ -1,0 +1,289 @@
+body {
+   background: #F9F9F9;
+   height: 100%;
+}
+
+/*Common*/
+.width100 {
+  width: 100%;
+}
+.pd20 {
+  padding: 20px;
+}
+.brd {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.blockMain {
+  border: 1px solid silver;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*header*/
+header {
+  padding: 0px;
+  margin: 0px;
+  height:  70px;
+  background: #fff;
+  border-top: 2px solid #00BABF;
+ -webkit-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+
+}
+.logo img {
+}
+.orga {
+  height: 35px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 25px;
+  padding: 5px;
+}
+.orga img {
+  height: 40px;
+}
+.nav {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.mapAreaHome {
+   height: 620px;
+   position: relative;
+}
+
+.fullMap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: unset !important;
+}
+
+/*home*/
+.filter {
+  position: absolute;
+  left: 50px;
+  top: 170px;
+  background: #10bbc0;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+.filter a {
+  color: #fff;
+  font-size: 18px;
+}
+.filter a i {
+  margin-right: 5px;
+  line-height: 22px;
+}
+
+.dItems {
+  padding: 50px;
+}
+.dItems .item {
+  background: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.08);
+box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.08);
+}
+.dItems .item:hover {
+  -webkit-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 33px 0px rgba(0,0,0,0.1);
+}
+.dItems .item a {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  padding-right: 20px;
+  padding-right: 20px;
+   line-height: 80px;
+   height: 80px;
+}
+.dItems .item i {
+  margin-right: 20px;
+}
+
+
+.fullMap {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%; /* aspect ratio */
+  position: relative;
+}
+
+.mapFrame {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -50;
+  width: 100%;
+}
+
+.detectArea {
+  position: absolute;
+  z-index: 3;
+  left: 50px;
+  top: 100px;
+  width: 20%;
+}
+.detectArea .num input {
+  height: 50px;
+}
+.detected {
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+}
+.detected .item {
+  margin-bottom: 20px;
+}
+.detected .item .avatar {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid #00BABF;
+  width: 100px;
+  height: 100px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.detected .item strong, .detected .item span {
+  display: block;
+}
+.detected .item i {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #00BABF;
+}
+.avatarArea {
+  position: relative;
+}
+.avaLabel {
+   
+    position: absolute;
+    top: 40px;
+    left: 97px;
+    background: #e2e2e2;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding-top: 5px;
+}
+.avaLabel i {
+  margin-top:  15px;
+}
+.detected .item .avatar img {
+    -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 90px;
+    height: 90px;
+    margin-top: 5px;
+}
+.avaDetails strong {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+.avaDetails span {
+  margin-bottom: 3px;
+}
+.content {
+  margin-top: -120px;
+}
+.fullPforile {
+  color: #00BABF;
+  float: left;
+  border: 1px solid #00BABF;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+   margin-top: 20px;
+   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.fullPforile:hover {
+  color: #fff;
+  background: #00BABF;
+}
+.detectDrone {
+  float: left;
+  border: 1px solid #e45454;
+  color: #e45454;
+  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+   margin-top: 20px;
+   margin-left: 20px;
+   -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.detectDrone:hover {
+  color: #fff;
+  background: #e45454;
+}
+
+
+.avaDetails span em {
+  color: #757575;
+  font-style: normal;
+}
+
+
+.blueLabel {
+  background: #48a1e0;
+}
+.redLabel {
+  background: #ea4d4d;
+}
+.brownLabel {
+  background: #7a552a;
+}
+
+.droneFly {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+      top: -23px;
+    left: 400px;
+  -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari 3-8 */
+    transform: rotate(20deg);
+}
+.videoFly {
+  left: 900px;
+  top: 350px;
+  position: absolute;
+}
